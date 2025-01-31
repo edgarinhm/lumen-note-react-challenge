@@ -2,12 +2,14 @@
   "name": "lumen-note-react-challenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edgarinhm.github.io/lumen-note-react-challenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.2.1",
     "flush-promises": "^1.0.2",
+    "gh-pages": "^6.3.0",
     "jest-junit": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --testResultsProcessor='jest-junit' --verbose",
-    "test:watch": "react-scripts test --verbose"
+    "test:watch": "react-scripts test --verbose",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest-junit": {
     "outputName": "./test-results.xml",
