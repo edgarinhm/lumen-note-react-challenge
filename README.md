@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React Notes
+
+Demo: https://edgarinhm.github.io/lumen-note-react-challenge/
 
 ![alt text](image.png)
 
